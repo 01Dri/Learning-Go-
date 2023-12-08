@@ -11,7 +11,7 @@ func vals() (int, int) {
 	fmt.Println("Enter with second number: ")
 	fmt.Scanln(&twoNumber) // This is the first input
 
-	return oneNumber, twoNumber // OMG THIS FUNCTIONS RETURN A TWO VALUES ????????
+	return oneNumber, twoNumber // OMG THIS FUNCTION RETURN A TWO VALUES ????????
 
 }
 
@@ -24,8 +24,8 @@ func main() {
 	var pointerX *int // Pointer
 	pointerX = &x     // Assigning the value of x variable to the pointerX
 
-	fmt.Println(x)        // Value of var x
-	fmt.Println(pointerX) // Address memory of pointer x
+	fmt.Println("Value of x variable is: ", x) // Value of var x
+	fmt.Println("Addresse memory: ", pointerX) // Address memory of pointer x
 
 	const myConstantString = "DIEGO" // Constant
 
@@ -33,7 +33,11 @@ func main() {
 
 	i := 1 // Initialing the variable before for loop
 	for i <= 3 {
-		fmt.Println("This loop repeat ", i, "x")
+		fmt.Println("This first loop repeat ", i, "x")
 		i++ // This is for the looping don't be infinite
+	}
+
+	for j := 1; j <= 5; j++ { // This is a same thing that the first loop but in one line
+		fmt.Println("This second loop repeat: ", j, "x")
 	}
 }
