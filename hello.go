@@ -43,13 +43,32 @@ func main() {
 
 	// Conditionals
 
+	// Operators
+	// && (And)
+	// || (Or)
+
 	var a1 = 20
 	var a2 = 35
-
 	if a1 > a2 {
 		fmt.Println("Yes a1 is greater")
 	} else {
 		fmt.Println("No, a1 isn't greater than a2")
+	}
+
+	if num := 9; num > 9 { // With Go, you can create variable and assign the value in conditionally line
+		fmt.Println("Yes num is grater than 9")
+	}
+
+	var c1 = true
+	var c2 = false
+	if c1 == true || c2 == true { // You can read this line as "If c1 be true or c2 be true"
+		fmt.Println("True!!!")
+	} else {
+		fmt.Println("False")
+	}
+
+	if c1 == true && c2 == true { // You can read this line as "If c1 be true and c2 be true"
+		fmt.Println("False!!!")
 	}
 
 }
