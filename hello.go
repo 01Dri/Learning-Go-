@@ -24,16 +24,16 @@ func main() {
 	var pointerX *int // Pointer
 	pointerX = &x     // Assigning the value of x variable to the pointerX
 
-	fmt.Println("Value of x variable is: ", x) // Value of var x
-	fmt.Println("Addresse memory: ", pointerX) // Address memory of pointer x
+	fmt.Println("Value of x variable is:", x) // Value of var x
+	fmt.Println("Address memory:", pointerX)  // Address memory of pointer x
 
 	const myConstantString = "DIEGO" // Constant
 
 	// For loops
 
-	i := 1 // Initialing the variable before for loop
+	i := 1 // Initialing the variable before the loop
 	for i <= 3 {
-		fmt.Println("This first loop repeat ", i, "x")
+		fmt.Println("This first loop repeat:", i, "x")
 		i++ // This is for the looping don't be infinite
 	}
 
@@ -46,6 +46,7 @@ func main() {
 	// Operators
 	// && (And)
 	// || (Or)
+	// == (Equals)
 
 	var a1 = 20
 	var a2 = 35
@@ -59,6 +60,7 @@ func main() {
 		fmt.Println("Yes num is grater than 9")
 	}
 
+	// You can change the values to test
 	var c1 = true
 	var c2 = false
 	if c1 == true || c2 == true { // You can read this line as "If c1 be true or c2 be true"
@@ -68,7 +70,9 @@ func main() {
 	}
 
 	if c1 == true && c2 == true { // You can read this line as "If c1 be true and c2 be true"
-		fmt.Println("False!!!")
+		fmt.Println("True!!!")
+	} else {
+		fmt.Println("False")
 	}
 
 }
