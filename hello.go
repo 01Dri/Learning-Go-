@@ -17,7 +17,6 @@ func vals() (int, int) {
 
 func main() {
 
-	vals()            // Return the sum of 2 numbers
 	a, b := vals()    // For to receive the two values of the function, It's necessary  two variables
 	fmt.Println(a, b) // This 2 variables receive the two values of function "vals"
 	var x int = 42
@@ -28,4 +27,13 @@ func main() {
 	fmt.Println(x)        // Value of var x
 	fmt.Println(pointerX) // Address memory of pointer x
 
+	const myConstantString = "DIEGO" // Constant
+
+	// For loops
+
+	i := 1 // Initialing the variable before for loop
+	for i <= 3 {
+		fmt.Println("This loop repeat ", i, "x")
+		i++ // This is for the looping don't be infinite
+	}
 }
