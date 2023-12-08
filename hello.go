@@ -9,7 +9,7 @@ func vals() (int, int) {
 	fmt.Println("Enter with first number: ")
 	fmt.Scanln(&oneNumber) // This is the first input
 	fmt.Println("Enter with second number: ")
-	fmt.Scanln(&twoNumber) // This is the first input
+	fmt.Scanln(&twoNumber) // This is the second input
 
 	return oneNumber, twoNumber // OMG THIS FUNCTION RETURN A TWO VALUES ????????
 
@@ -37,7 +37,19 @@ func main() {
 		i++ // This is for the looping don't be infinite
 	}
 
-	for j := 1; j <= 5; j++ { // This is a same thing that the first loop but in one line
+	for j := 1; j <= 5; j++ { // This is the same thing as the first loop but in one line
 		fmt.Println("This second loop repeat: ", j, "x")
 	}
+
+	// Conditionals
+
+	var a1 = 20
+	var a2 = 35
+
+	if a1 > a2 {
+		fmt.Println("Yes a1 is greater")
+	} else {
+		fmt.Println("No, a1 isn't greater than a2")
+	}
+
 }
